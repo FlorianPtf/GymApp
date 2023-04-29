@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ptf Gym - Abdos</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <ul class="nav-logo-ul">
+                <li>
+                    <a href="index.html" class="nav-logo">Ptf<span class="tick-span">'</span><span class="logo-span">Gym</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="exercice-container">
+            <div class="exercice-box">
+                <h2 class="exercice-title">Les meilleurs exercices</h2>
+                <h2 class="exercice-subtitle">pour t'entrainer</h2>
+            </div>
+
+            <div>
+                <p class="exercice-description">Haut du corps <i class="fa-solid fa-arrow-right"></i> Abdos</p>
+            </div>
+        </div>
+
+        <div class="exercice-container-img">
+            <div class="exercice-gauche" id="abdos1">
+                <div class="exercice-gauche-description">
+                    <p>Crunch</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="exercice-milieu" id="abdos2">
+                <div class="exercice-milieu-description">
+                    <p>Elevation jambes</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="exercice-droite" id="abdos3">
+                <div class="exercice-droite-description">
+                    <p>Gainage</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var scroll = document.querySelector('.scrolltotop');
+            scroll.classList.toggle("active", window.scrollY > 750)
+        })
+
+        function scrollToTop(){
+            window.scrollTo({
+                top:0,
+                behavior: 'smooth'
+            })
+        }
+    </script>
+</body>
+</html>
